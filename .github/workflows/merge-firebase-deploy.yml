@@ -15,7 +15,7 @@ jobs:
       - name: Installing project dependencies
         run: npm install
       - name: Building the project
-        run: npm run docs:dev
+        run: npm run docs:build
       - name: Deploying on Firebase
       - uses: w9jds/firebase-action@master
         with:
