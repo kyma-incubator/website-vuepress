@@ -2,20 +2,20 @@
 title: Overview
 ---
 
-Kyma /kee-ma/ is a cloud-native application runtime that combines the power of Kubernetes with a set of best-in-class tools and open-source components that empower you to develop, run, and operate secure and scalable cloud-native applications.
+Kyma is an application runtime that provides you a flexible and easy way to connect, extend, and customize your applications in the cloud-native world of Kubernetes.
 
 ![overview](./guide/01-overview/assets/kyma-overview.svg)
 
-Out of the box, Kyma offers various functionalities, such as:
+Out of the box, Kyma offers various functionalities, such as:  
 
 - Serverless development platform to run lightweight Functions in a cost-efficient and scalable way
 - System connectivity that provides endpoint to register Events and APIs of external applications
-- Eventing that provides messaging channel to receive Events, enrich them, and trigger business flows using Functions or services
+- Eventing that provides messaging channel to receive events, enrich them, and trigger business flows using Functions or services
 - Service Mesh for service-to-service communication and proxying
-- Service consumption
+- Service management
 - Secure API exposure
 - In-cluster observability
-- CLI supported by the intuitive Console UI
+- CLI supported by the intuitive Kyma Dashboard
 
 Read about [Kyma main areas](#overview-main-areas) to learn more.
 
