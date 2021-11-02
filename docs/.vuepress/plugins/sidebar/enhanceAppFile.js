@@ -1,10 +1,10 @@
-import Sidebar from "./Sidebar.vue";
+import Sidebar from './Sidebar.vue';
 
 export default ({ Vue, siteData }) => {
   const docs = siteData.themeConfig.docs;
-
-  Vue.component("Sidebar", {
-    name: "Sidebar",
+  console.log(siteData);
+  Vue.component('Sidebar', {
+    name: 'sidebar',
     functional: true,
     render() {
       return <Sidebar pages={siteData.pages} item={docs} />;

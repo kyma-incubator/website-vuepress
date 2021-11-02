@@ -1,12 +1,13 @@
 <template>
   <SidebarItem :pages="pages" :item="item" />
+  <h1>hi</h1>
 </template>
 
 <script>
-import SidebarItem from "./SidebarItem";
+import SidebarItem from './SidebarItem';
 
 export default {
-  name: "sidebar",
+  name: 'sidebar',
   components: {
     SidebarItem,
   },
@@ -17,6 +18,9 @@ export default {
   data() {
     return {};
   },
+  setup(){
+    console.log(props.item)
+  },
   computed: {},
   created() {},
   destroyed() {},
@@ -24,4 +28,4 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped></style>
+<style></style>
