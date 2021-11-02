@@ -6,7 +6,7 @@
 
 <script>
 import SidebarItem from './SidebarItem';
-import myData from '@temp/my-data';
+// import myData from '@temp/my-data';
 
 export default {
   name: 'sidebar',
@@ -14,9 +14,7 @@ export default {
     SidebarItem,
   },
   data() {
-    return {
-      pages: null,
-    };
+
   },
   setup() {
     const { results: item } = results;

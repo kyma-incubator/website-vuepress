@@ -4,8 +4,7 @@ const folderName = 'guide';
 const results = dirTree(path.join(__dirname, `../${folderName}`), {
   extensions: /\.md/,
 });
+console.log(results);
 module.exports = {
   results,
 };
-
- 
