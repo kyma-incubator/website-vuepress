@@ -9,19 +9,9 @@ module.exports = {
     darkMode: false,
   },
   plugins: [[path.resolve(__dirname, './plugins/helloworld/')]],
-  // onPrepared: async app => {
-  //   const myData = app.pages.map(page => {
-  //     page;
-  //   });
-  //   await app.writeTemp(
-  //     'my-data.js',
-  //     `export default ${JSON.stringify(myData)}`
-  //   );
-  // },
-  bundler: '@vuepress/bundler-webpack',
+  bundler: '@vuepress/bundler-vite',
+  // bundler options
   bundlerConfig: {
-    SassLoaderOptions:{
-      
-    }
+    // see below
   },
 };

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import SidebarItem from './SidebarItem';
+import SidebarItem from './SidebarItem.vue';
 // import myData from '@temp/my-data';
 
 export default {
@@ -14,7 +14,9 @@ export default {
     SidebarItem,
   },
   data() {
-
+    return {
+      SidebarItem,
+    };
   },
   setup() {
     const { results: item } = results;

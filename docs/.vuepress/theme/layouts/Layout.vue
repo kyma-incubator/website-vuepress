@@ -19,7 +19,7 @@
 <script>
 import Header from '../components/Header.vue';
 import Footer from '../components/Footer.vue';
-
+import '../styles/index.scss';
 export default {
   components: {
     Header,
@@ -36,7 +36,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../styles/index.scss';
 h1 {
   font-size: 20px;
   font-weight: bold;

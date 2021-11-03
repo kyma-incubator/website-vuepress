@@ -13,10 +13,10 @@
             :key="item.name"
           >
             <a :href="item.href" target="_blank" class="flex">
-              <img
-                :src="require(`../../public/${item.icon}`)"
-                class="mr-2 social-media-logo"
-              /><span class="footer-social-text">{{ item.name }}</span>
+              <img class="mr-2 social-media-logo" /><span
+                class="footer-social-text"
+                >{{ item.name }}</span
+              >
             </a>
           </div>
         </div>

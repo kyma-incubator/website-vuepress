@@ -1,24 +1,22 @@
 <template>
   <header class="flex app-header">
-    <img src="../../public/blog-header.svg" class="header-background" />
+    <img :src="blogheader" class="header-background" />
     <div class="container m-auto header-section">
       <a href="/">
-        <img src="../../public/logo.svg" width="173" class="header-logo" />
+        <img :src="logo" class="header-logo" />
       </a>
       <div class="flex">
         <iframe
-          src="https://ghbtns.com/github-btn.html?user=kyma-project&repo=kyma&type=star&count=true"
+          :src="githubStars"
           frameBorder="0"
           scrolling="0"
-          width="95px"
-          height="20px"
+          class="iframe"
         />
         <iframe
-          src="https://ghbtns.com/github-btn.html?user=kyma-project&repo=kyma&type=fork&count=true"
+          :src="githubForks"
           frameBorder="0"
           scrolling="0"
-          width="95px"
-          height="20px"
+          class="iframe"
         />
       </div>
     </div>
@@ -26,7 +24,20 @@
 </template>
 
 <script>
-export default {};
+import blogheader from './blog-header.svg';
+import logo from './logo.svg';
+export default {
+  setup() {
+    return {
+      blogheader,
+      logo,
+      githubStars:
+        'https://ghbtns.com/github-btn.html?user=kyma-project&repo=kyma&type=star&count=true',
+      githubForks:
+        'https://ghbtns.com/github-btn.html?user=kyma-project&repo=kyma&type=fork&count=true',
+    };
+  },
+};
 </script>
 
 <style lang="scss">
@@ -45,10 +56,16 @@ export default {};
 
 .header-section {
   padding: 30px 30px 0px;
-  z-index: 2;
+  z-index: 3;
 }
 
 .header-logo {
   margin-bottom: 15px;
+  width: 173px;
+}
+
+iframe {
+  width: 95px;
+  height: 20px;
 }
 </style>

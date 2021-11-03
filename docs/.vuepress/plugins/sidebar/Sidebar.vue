@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import SidebarItem from './SidebarItem';
+import SidebarItem from './SidebarItem.vue';
 
 export default {
   name: 'sidebar',
@@ -18,8 +18,8 @@ export default {
   data() {
     return {};
   },
-  setup(){
-    console.log(props.item)
+  setup() {
+    console.log(props.item);
   },
   computed: {},
   created() {},
