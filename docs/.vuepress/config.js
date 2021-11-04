@@ -8,6 +8,7 @@ module.exports = {
   themeConfig: {
     darkMode: false,
   },
+  plugins: [path.resolve(__dirname, './plugins/sidebar/')],
   bundler: '@vuepress/bundler-vite',
   bundlerConfig: {
     viteOptions: {

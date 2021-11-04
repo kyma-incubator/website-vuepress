@@ -1,11 +1,13 @@
 module.exports = {
-  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    extend: {},
+  purge: {
+    enabled: process.env.NODE_ENV === 'production',
+    content: [
+      './docs/.vuepress/**/*.js',
+      './docs/.vuepress/**/*.vue',
+      './docs/.vuepress/**/*.ts',
+    ],
+    options: {
+      safelist: ['html', 'body'],
+    },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
 };
