@@ -1,26 +1,22 @@
 <template>
-  <h1>hi</h1>
+  <div>hi</div>
+  <div v-for="route in htmlRoutes" :key="route.path">
+    <p @click="router.push(route.path)">{{ route.meta.title }}</p>
+  </div>
 </template>
 
 <script>
-import SidebarItem from './SidebarItem.vue';
-
 export default {
   name: 'sidebar',
-  components: {
-    SidebarItem,
-  },
   props: {
     router: Object,
   },
   setup(props) {
-    // console.log(props.router);
-    // console.log(props.router.getRoutes());
-    const array = ['html', '.md'];
-    const routes = props.router.getRoutes().filter(route => !/(html|md)$/.test(route.path));
-    console.log(routes);
+    const htmlRoutes = props.router
+      .getRoutes()
+      .filter(route => /html$/.test(route.path));
     return {
-      SidebarItem,
+      htmlRoutes,
     };
   },
 };
