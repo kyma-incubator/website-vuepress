@@ -48,7 +48,6 @@
 </template>
 
 <script>
-import { useSiteData } from '@vuepress/client';
 export default {
   name: 'sidebaritem',
   props: {
@@ -73,8 +72,6 @@ export default {
   },
   computed: {
     isFolder() {
-      const siteData = useSiteData();
-      console.log(siteData);
       return this.newItem.children && this.newItem.children.length;
     },
     getPathName() {
