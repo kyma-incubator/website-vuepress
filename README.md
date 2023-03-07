@@ -1,5 +1,9 @@
 # website-vuepress
 
+## :warning: **Archived**
+
+This project is discontinued and the repository has been deprecated and archived on Mar 7th, 2023.
+
 ## Update documentation
 
 To update documentation just place .md files in the guide folder. To edit the sidebar list titles you have to edit the `title` field in .md file. If a subfolder doesn't provide a `README.md` file with the `title` section, the system will use folder name for the title.
